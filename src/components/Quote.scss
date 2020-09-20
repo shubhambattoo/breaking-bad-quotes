@@ -1,0 +1,64 @@
+.quote {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 25px;
+  position: relative;
+
+  &::after {
+    content: '\201D';
+    position: absolute;
+    top: -35px;
+    right: 0;
+    font-size: 140px;
+    font-style: italic;
+    font-family: Arial;
+    color: #e4e4e4;
+    z-index: -1;
+  }
+
+  &__content {
+    font-size: 30px;
+    color: #6d6d6d;
+    padding: 10px 0 20px;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+
+  &__author {
+    font-style: 14px; 
+    color: #313131;
+    text-align: right;
+    padding-bottom: 10px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 576px) {
+    margin: 20px 30px;
+    padding: 0 10px;
+
+    &__content{
+      font-size: 20px;
+    }
+
+    &__actions {
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.loading {
+  display: grid;
+  place-items: center;
+  padding: 60px 0;
+  font-size: 70px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: HeartBreakingBad, sans-serif;
+}
