@@ -7,8 +7,21 @@
   transition: all 0.2s;
   font-size: 16px;
   border: none;
-	cursor: pointer;
-	font-weight: 500;
+  cursor: pointer;
+  font-weight: 500;
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s;
+  }
 
   &:hover {
     transform: translateY(-3px);
@@ -39,5 +52,9 @@
   &.normal {
     background-color: #dfe6e9;
     color: #222;
+
+    &::after {
+      background-color: #cacaca;
+    }
   }
 }

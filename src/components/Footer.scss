@@ -1,0 +1,18 @@
+footer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #555;
+  letter-spacing: 2px;
+  font-size: 12px;
+
+  a {
+    color: #555;
+    text-decoration: none;
+    transition: color 0.2s;
+    &:hover {
+      color: #0984e3;
+    }
+  }
+}
