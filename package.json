@@ -1,7 +1,16 @@
 {
-  "name": "breakdown-breaking-bad",
+  "name": "breaking-bad-quotes",
   "version": "0.1.0",
   "private": true,
+  "author": "shubhambattoo",
+  "repository": "https://github.com/shubhambattoo/breaking-bad-quotes.git",
+  "keywords": [
+    "react",
+    "breaking-bad-api",
+    "breaking-bad",
+    "quotes",
+    "react-hooks"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
